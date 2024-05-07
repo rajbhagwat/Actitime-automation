@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" verbose="1">
+    <test name="regression">
+        <parameter name="browser" value="chrome"/>
+        <packages>
+            <package name="actitimeTask"/>
+                        <package name="Flipkart"/>
+                        <package name="amazon"/>
+
+        </packages>
+        <classes>
+            <class name="actitimeTask.ChangeStatusTest"/>
+            <!--            <class name="automation.LoginTest"/>-->
+            <!--            <class name="actitimeTask.GetTaskNamesTest"/>-->
+            <!--            <class name="Flipcart.FindBrokenImg"></class>-->
+            <!--            <class name="amazon.AlertExamples"></class>-->
+
+            <!--            <class name="actitimeTask.CreateCustomerTest"/>-->
+        </classes>
+    </test>
+    <test name="sanity">
+        <parameter name="browser" value="chrome"/> <!-- Example: Set browser parameter for sanity test -->
+        <classes>
+            <!--            <class name="com.orangehrm.LoginPage"/>-->
+        </classes>
+    </test>
+</suite>
